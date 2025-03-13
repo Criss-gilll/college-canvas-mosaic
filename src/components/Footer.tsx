@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin, YouTube } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, MapPin, Mail, Phone, Youtube } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -28,7 +27,7 @@ const Footer: React.FC = () => {
                 <Linkedin size={20} />
               </a>
               <a href="#" className="text-white hover:text-college-gold transition-colors">
-                <YouTube size={20} />
+                <Youtube size={20} />
               </a>
             </div>
           </div>

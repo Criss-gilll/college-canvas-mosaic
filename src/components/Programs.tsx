@@ -12,7 +12,7 @@ interface ProgramItemProps {
 
 const ProgramItem: React.FC<ProgramItemProps> = ({ title, description, icon }) => {
   return (
-    <Card className="card-hover border-t-4 border-t-college-blue">
+    <Card className="card-hover border-t-4 border-t-college-blue h-full">
       <CardHeader>
         <div className="mb-4 text-college-blue">
           {icon}
@@ -53,16 +53,16 @@ const Programs: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 bg-college-light-gray">
+    <section className="py-12 sm:py-16 bg-college-light-gray">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-college-blue mb-4">Academic Excellence</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-college-blue mb-4">Academic Excellence</h2>
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
             Discover our diverse range of undergraduate and graduate programs designed to prepare you for the challenges of tomorrow.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {programs.map((program, index) => (
             <ProgramItem 
               key={index}
@@ -73,8 +73,8 @@ const Programs: React.FC = () => {
           ))}
         </div>
         
-        <div className="text-center mt-12">
-          <Button className="bg-college-blue hover:bg-college-light-blue text-white px-8 py-6 text-lg">
+        <div className="text-center mt-10 sm:mt-12">
+          <Button className="bg-college-blue hover:bg-college-light-blue text-white px-6 py-5 sm:px-8 sm:py-6 text-base sm:text-lg w-full sm:w-auto">
             View All Programs
           </Button>
         </div>
