@@ -8,12 +8,580 @@
     <meta name="description" content="Discover Evergreen University - Where Knowledge Meets Opportunity" />
     <meta name="author" content="Evergreen University" />
     <meta property="og:image" content="/og-image.png" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
 
   <body>
-    <div id="root"></div>
+    <!-- Header Navigation -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="/">
+              <div class="logo-circle">
+                <span>E</span>
+              </div>
+              <span class="logo-text">Evergreen University</span>
+            </a>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="desktop-nav">
+            <a href="#" class="nav-link">Home</a>
+            <div class="dropdown">
+              <button class="dropdown-button">
+                Academics <i data-lucide="chevron-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Undergraduate</a>
+                <a href="#">Graduate</a>
+                <a href="#">Departments</a>
+                <a href="#">Research</a>
+              </div>
+            </div>
+            <a href="#campus-life" class="nav-link">Campus Life</a>
+            <a href="#" class="nav-link">Admission</a>
+            <a href="#" class="nav-link">About</a>
+          </nav>
+
+          <!-- Call to Action Button -->
+          <div class="cta-button-container">
+            <button class="button primary-button">Apply Now</button>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="mobile-menu-button">
+            <button id="menu-toggle">
+              <i data-lucide="menu"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobile-nav">
+          <a href="#" class="nav-link">Home</a>
+          <button class="mobile-dropdown-button">
+            Academics <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="mobile-dropdown-content">
+            <a href="#">Undergraduate</a>
+            <a href="#">Graduate</a>
+            <a href="#">Departments</a>
+            <a href="#">Research</a>
+          </div>
+          <a href="#campus-life" class="nav-link">Campus Life</a>
+          <a href="#" class="nav-link">Admission</a>
+          <a href="#" class="nav-link">About</a>
+          <button class="button primary-button mobile-apply">Apply Now</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=3882&q=80')">
+        <div class="hero-gradient"></div>
+      </div>
+      
+      <div class="container">
+        <div class="hero-content">
+          <h1>Discover Your Potential at Evergreen University</h1>
+          <p>Shaping tomorrow's leaders through excellence in education, research, and innovation.</p>
+          <div class="hero-buttons">
+            <button class="button gold-button">Explore Programs</button>
+            <button class="button outline-button">Schedule a Visit</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="scroll-indicator">
+        <div class="scroll-icon">
+          <div class="scroll-dot"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+      <div class="container">
+        <div class="section-header">
+          <h2>Academic Excellence</h2>
+          <p>Discover our diverse range of undergraduate and graduate programs designed to prepare you for the challenges of tomorrow.</p>
+        </div>
+        
+        <div class="programs-grid">
+          <div class="program-card">
+            <div class="program-icon">
+              <i data-lucide="book-open"></i>
+            </div>
+            <h3>Arts & Humanities</h3>
+            <p>Explore literature, philosophy, history, and the fine arts in our renowned humanities programs.</p>
+            <button class="button outline-button">Learn More</button>
+          </div>
+          
+          <div class="program-card">
+            <div class="program-icon">
+              <i data-lucide="users"></i>
+            </div>
+            <h3>Business & Economics</h3>
+            <p>Develop the skills to lead in global business environments with our cutting-edge business programs.</p>
+            <button class="button outline-button">Learn More</button>
+          </div>
+          
+          <div class="program-card">
+            <div class="program-icon">
+              <i data-lucide="flask-conical"></i>
+            </div>
+            <h3>Science & Engineering</h3>
+            <p>Advance scientific knowledge and solve complex problems with our innovative STEM programs.</p>
+            <button class="button outline-button">Learn More</button>
+          </div>
+          
+          <div class="program-card">
+            <div class="program-icon">
+              <i data-lucide="graduation-cap"></i>
+            </div>
+            <h3>Graduate Studies</h3>
+            <p>Take your expertise to the next level with our comprehensive graduate and professional programs.</p>
+            <button class="button outline-button">Learn More</button>
+          </div>
+        </div>
+        
+        <div class="section-cta">
+          <button class="button primary-button">View All Programs</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="features-content">
+            <h2>Why Choose Evergreen University?</h2>
+            <p>For over 75 years, we've been committed to providing an exceptional education that prepares students for success in a rapidly changing world.</p>
+            
+            <ul class="features-list">
+              <li>
+                <i data-lucide="check-circle"></i>
+                <span>World-class faculty dedicated to teaching and research excellence</span>
+              </li>
+              <li>
+                <i data-lucide="check-circle"></i>
+                <span>State-of-the-art facilities including modern laboratories and libraries</span>
+              </li>
+              <li>
+                <i data-lucide="check-circle"></i>
+                <span>Vibrant campus life with over 200 student organizations</span>
+              </li>
+              <li>
+                <i data-lucide="check-circle"></i>
+                <span>Robust career services with connections to leading employers</span>
+              </li>
+              <li>
+                <i data-lucide="check-circle"></i>
+                <span>Diverse and inclusive community from over 60 countries</span>
+              </li>
+              <li>
+                <i data-lucide="check-circle"></i>
+                <span>Opportunities for undergraduate research and internships</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="features-image">
+            <div class="image-decoration"></div>
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=6000&q=80" alt="Students collaborating on campus">
+            <div class="image-decoration bottom"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" id="stats">
+      <div class="container">
+        <div class="section-header light">
+          <h2>Evergreen By The Numbers</h2>
+          <div class="divider"></div>
+        </div>
+        
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">15:1</div>
+            <div class="stat-label">Student-Faculty Ratio</div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-value">95%</div>
+            <div class="stat-label">Graduation Rate</div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-value">$42M+</div>
+            <div class="stat-label">Research Funding</div>
+          </div>
+          
+          <div class="stat-item">
+            <div class="stat-value">25,000+</div>
+            <div class="stat-label">Alumni Network</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campus Life Section -->
+    <section class="campus-life" id="campus-life">
+      <div class="container">
+        <div class="section-header">
+          <h2>Vibrant Campus Life</h2>
+          <p>At Evergreen, learning extends beyond the classroom. Discover the many ways to get involved and make your college experience memorable.</p>
+        </div>
+        
+        <div class="campus-grid">
+          <div class="campus-card">
+            <div class="campus-image">
+              <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=6052&q=80" alt="Student Organizations">
+            </div>
+            <div class="campus-content">
+              <h3>Student Organizations</h3>
+              <p>Join one of our 200+ student clubs and organizations to pursue your interests and develop leadership skills.</p>
+            </div>
+          </div>
+          
+          <div class="campus-card">
+            <div class="campus-image">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=3543&q=80" alt="Athletics & Recreation">
+            </div>
+            <div class="campus-content">
+              <h3>Athletics & Recreation</h3>
+              <p>From varsity sports to intramural leagues, stay active and build team spirit through our athletic programs.</p>
+            </div>
+          </div>
+          
+          <div class="campus-card">
+            <div class="campus-image">
+              <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=4076&q=80" alt="Arts & Culture">
+            </div>
+            <div class="campus-content">
+              <h3>Arts & Culture</h3>
+              <p>Experience vibrant cultural events, performances, exhibitions, and concerts throughout the academic year.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Student & Alumni Voices</h2>
+          <p>Hear from our community about their experiences at Evergreen University.</p>
+        </div>
+        
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="quote-icon">
+              <i data-lucide="quote"></i>
+            </div>
+            <p class="testimonial-text">My time at Evergreen University transformed my perspective and opened doors I never imagined possible. The faculty's dedication to student success is truly exceptional.</p>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Sarah Johnson">
+              </div>
+              <div class="author-info">
+                <h4>Sarah Johnson</h4>
+                <p>Class of 2022, Computer Science</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="quote-icon">
+              <i data-lucide="quote"></i>
+            </div>
+            <p class="testimonial-text">The research opportunities at Evergreen provided me with hands-on experience that was invaluable for my career. I'm grateful for the mentorship and guidance I received.</p>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="https://images.unsplash.com/photo-1473091534298-04dcbce3278c?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="David Chen">
+              </div>
+              <div class="author-info">
+                <h4>David Chen</h4>
+                <p>Class of 2021, Environmental Science</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="quote-icon">
+              <i data-lucide="quote"></i>
+            </div>
+            <p class="testimonial-text">Beyond academics, Evergreen's vibrant community helped me develop leadership skills and lifelong friendships. My college experience exceeded all expectations.</p>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Maya Patel">
+              </div>
+              <div class="author-info">
+                <h4>Maya Patel</h4>
+                <p>Class of 2023, Business Administration</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news" id="news">
+      <div class="container">
+        <div class="section-header">
+          <h2>Latest News & Events</h2>
+          <p>Stay updated with the latest happenings, breakthroughs, and events at Evergreen University.</p>
+        </div>
+        
+        <div class="news-grid">
+          <div class="news-card">
+            <div class="news-image">
+              <div class="news-category">Academics</div>
+              <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Research Innovation">
+            </div>
+            <div class="news-content">
+              <div class="news-date">October 15, 2023</div>
+              <h3>Evergreen University Ranks in Top 20 for Research Innovation</h3>
+              <p>Our institution has been recognized for pioneering research across multiple disciplines, earning a prestigious ranking in the National University Assessment.</p>
+            </div>
+            <div class="news-footer">
+              <button class="button outline-button">Read More</button>
+            </div>
+          </div>
+          
+          <div class="news-card">
+            <div class="news-image">
+              <div class="news-category">Financial Aid</div>
+              <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Scholarship Program">
+            </div>
+            <div class="news-content">
+              <div class="news-date">September 28, 2023</div>
+              <h3>New Scholarship Program Launched for First-Generation Students</h3>
+              <p>The Evergreen Foundation announces a $5 million commitment to support qualified first-generation college students with financial aid and mentoring.</p>
+            </div>
+            <div class="news-footer">
+              <button class="button outline-button">Read More</button>
+            </div>
+          </div>
+          
+          <div class="news-card">
+            <div class="news-image">
+              <div class="news-category">Athletics</div>
+              <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Women's Soccer">
+            </div>
+            <div class="news-content">
+              <div class="news-date">September 10, 2023</div>
+              <h3>Evergreen Women's Soccer Team Advances to National Championship</h3>
+              <p>After an undefeated season, our women's soccer team will compete for the national title for the first time in university history.</p>
+            </div>
+            <div class="news-footer">
+              <button class="button outline-button">Read More</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section-cta">
+          <button class="button outline-button blue">View All News & Events</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get in Touch</h2>
+          <p>Have questions about admissions, campus tours, or programs? We're here to help.</p>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-form">
+            <div class="form-card">
+              <div class="form-header">
+                <h3>Request Information</h3>
+              </div>
+              <div class="form-content">
+                <form id="contactForm">
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label for="full-name">Full Name</label>
+                      <input id="full-name" type="text" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input id="email" type="email" placeholder="Your email address" required>
+                    </div>
+                  </div>
+                  
+                  <div class="form-grid">
+                    <div class="form-group">
+                      <label for="phone">Phone (Optional)</label>
+                      <input id="phone" type="tel" placeholder="Your phone number">
+                    </div>
+                    <div class="form-group">
+                      <label for="interest">Area of Interest</label>
+                      <select id="interest">
+                        <option value="">Select an area of interest</option>
+                        <option value="undergraduate">Undergraduate Programs</option>
+                        <option value="graduate">Graduate Programs</option>
+                        <option value="research">Research Opportunities</option>
+                        <option value="campus">Campus Visit</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="How can we help you?"></textarea>
+                  </div>
+                  
+                  <button type="submit" class="button primary-button full-width">
+                    Submit Request
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-header">
+                <h3>Contact Information</h3>
+              </div>
+              <div class="info-content">
+                <div class="info-item">
+                  <i data-lucide="map-pin"></i>
+                  <div>
+                    <h4>Campus Address</h4>
+                    <p>
+                      123 University Avenue<br>
+                      Evergreen, CA 94305<br>
+                      United States
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="info-item">
+                  <i data-lucide="phone"></i>
+                  <div>
+                    <h4>Phone</h4>
+                    <p>
+                      Admissions: (555) 123-4567<br>
+                      Main Office: (555) 765-4321
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="info-item">
+                  <i data-lucide="mail"></i>
+                  <div>
+                    <h4>Email</h4>
+                    <p>
+                      Admissions: admissions@evergreen.edu<br>
+                      General Inquiries: info@evergreen.edu
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="office-hours">
+                  <h4>Office Hours</h4>
+                  <p>
+                    Monday - Friday: 8:00 AM - 5:00 PM<br>
+                    Saturday: 9:00 AM - 1:00 PM<br>
+                    Sunday: Closed
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- About Column -->
+          <div class="footer-about">
+            <h3>Evergreen University</h3>
+            <p>
+              Shaping tomorrow's leaders through excellence in education, research, and innovation since 1948.
+            </p>
+            <div class="social-links">
+              <a href="#"><i data-lucide="facebook"></i></a>
+              <a href="#"><i data-lucide="twitter"></i></a>
+              <a href="#"><i data-lucide="instagram"></i></a>
+              <a href="#"><i data-lucide="linkedin"></i></a>
+              <a href="#"><i data-lucide="youtube"></i></a>
+            </div>
+          </div>
+          
+          <!-- Quick Links -->
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Admissions</a></li>
+              <li><a href="#">Academic Programs</a></li>
+              <li><a href="#campus-life">Campus Life</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Alumni</a></li>
+            </ul>
+          </div>
+          
+          <!-- Resources -->
+          <div class="footer-links">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Library</a></li>
+              <li><a href="#">Career Services</a></li>
+              <li><a href="#">Student Portal</a></li>
+              <li><a href="#">Financial Aid</a></li>
+              <li><a href="#">Campus Safety</a></li>
+              <li><a href="#">Technology Help</a></li>
+            </ul>
+          </div>
+          
+          <!-- Contact -->
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <address>
+              <p>123 University Avenue</p>
+              <p>Evergreen, CA 94305</p>
+              <p>United States</p>
+              <p class="mt-4">Phone: (555) 123-4567</p>
+              <p>Email: info@evergreen.edu</p>
+            </address>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="current-year"></span> Evergreen University. All rights reserved.
+          </p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <script src="script.js"></script>
   </body>
 </html>
